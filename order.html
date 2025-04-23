@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Order - My Cafe</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 style="font-size: 2cm;">Place Your Order</h1>
+    <nav>
+      <button onclick="navigateTo('index.html')">Home</button>
+      <button onclick="navigateTo('menu.html')">Beverage</button>
+      <button onclick="navigateTo('pastries.html')">Pastries</button>
+      <button onclick="navigateTo('login.html')">Login</button>
+    </nav>
+  </header>
+  <main>
+    <table style="width:100%">
+        <th colspan="4" style="font-size: x-large;" >Choose a Beverage:</th>
+        <tr>
+          <td>
+            <div class="menu-item">
+                <select id="item">
+                    <option value="espresso">Espresso</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="latte">Latte</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="Black Tea">Black Tea</option>
+                    <option value="Green Tea">Green Tea</option>
+                    <option value="Milk Tea">Milk Tea</option>
+                    <option value="Herbal Tea">Herbal Tea</option>
+                  </select>
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" id="quantity" min="0" value="0">
+            </div>
+          </td>
+        </tr>
+        <th colspan="4" style="font-size: x-large;" >Choose a Pastries:</th>
+        <tr>
+          <td>
+            <div class="menu-item">
+                <select id="item">
+                    <option value="Croissant">Croissant</option>
+                    <option value="Muffin">Muffin</option>
+                    <option value="Chocolate Cake">Chocolate Cake</option>
+                    <option value="Cheesecake">Cheesecake</option>
+                    <option value="Opera Cake">Opera Cake</option>
+                    <option value="Chiffon Cake">Chiffon Cake</option>
+                    <option value="Meringue Cake">Meringue Cake</option>
+                    <option value="Cupcakes">Cupcakes</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="0" value="0">
+                
+
+            </div>
+          </td>
+        </tr>
+    </table> 
+      <button type="button" onclick="placeOrder()" style="font-size: x-large;">Place Order</button>
+    </form>
+    <p id="orderMessage"></p>
+  </main>
+  <footer style="background-color: #f8f9fa; padding: 20px; text-align: center; border-top: 2px solid #ddd;">
+    <div style="font-size: large; margin-bottom: 10px;">
+      <strong>Visit Us at My Cafe</strong>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <p style="margin: 0;">Don Bosco More Siliguri</p>
+      <p style="margin: 0;">Phone: 7602312086 | Email: mycafe@gmail.com</p>
+    </div>
+    <div>
+      <p style="margin: 0; font-size: small;">&copy; 2024 My Cafe. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
